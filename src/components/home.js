@@ -38,7 +38,7 @@ class Home extends Component {
         let toLang = 'ar'
         //  let text = 'something to translate';
         
-        const API_KEY =['your api key'];
+        const API_KEY ='YOUR API KEY';
         let   url = `https://translation.googleapis.com/language/translate/v2?key=${API_KEY}`
         url += '&q=' + encodeURI(text);
         url += `&source=${fromLang}`;
@@ -47,7 +47,7 @@ class Home extends Component {
         
 
         fetch(url, { 
-            method: 'POST',
+            method: 'GET',
            
             headers: {
               "Content-Type": "application/json",
