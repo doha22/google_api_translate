@@ -61,7 +61,7 @@ class Home extends Component {
         let toLang = 'ar'
         //  let text = 'something to translate';
         
-        const API_KEY ='your api key';
+        const API_KEY ='AIzaSyChN7CPIDaxB8fVVNHpjmj5XKkR882toaU';
        
 
         
@@ -118,7 +118,7 @@ class Home extends Component {
       let toLang = 'ar'
       //  let text = 'something to translate';
       
-      const API_KEY ='your api key';
+      const API_KEY ='AIzaSyChN7CPIDaxB8fVVNHpjmj5XKkR882toaU';
      
 
       
@@ -158,13 +158,12 @@ if(text !==''){
         return this.state.translation_data.map(item => {
 
             return(     
-                //  <span>
-                //      {item.translatedText} 
-
-                //  </span> 
-                <tr key={item.id}>
-                  <td> {item.translatedText}</td>
-                </tr>
+                 <span key="1">
+                     {item.translatedText} 
+                 </span> 
+                // <tr key={item.id}>
+                //   <td> {item.translatedText}</td>
+                // </tr>
 
 
             )
@@ -196,17 +195,16 @@ if(text !==''){
           <div className="col-md-3"></div>
   <Card className="card col-md-6"> 
   <Card.Title className="card_text">Translate the text</Card.Title>    
-  <Card.Text  className="card_text">
+  {/* <Card.Text  className="card_text"> */}
+  <div className="card_text">
  
 {/* <button onClick={this.togglePopup.bind(this)}> Click To Launch Popup</button>   */}
-<div onMouseUp={this.translation}> 
+<span onMouseUp={this.translation}> 
 
-<p>
  on this page the user can heighlt text and see all the result on the popup page  
 
-</p>
+</span>
 
-</div>
 {this.state.showPopup ?  
 <Popup  
           text={this.render_data()}  
@@ -214,7 +212,8 @@ if(text !==''){
 />  
 : null  
 }  
-</Card.Text>
+{/* </Card.Text> */}
+</div>
 </Card> 
 <div className="col-md-3"></div> 
 </div>  
