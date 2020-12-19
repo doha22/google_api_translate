@@ -61,7 +61,7 @@ class Home extends Component {
         let toLang = 'ar'
         //  let text = 'something to translate';
         
-        const API_KEY ='AIzaSyChN7CPIDaxB8fVVNHpjmj5XKkR882toaU';
+        const API_KEY ='your api key';
        
 
         
@@ -118,7 +118,7 @@ class Home extends Component {
       let toLang = 'ar'
       //  let text = 'something to translate';
       
-      const API_KEY ='AIzaSyChN7CPIDaxB8fVVNHpjmj5XKkR882toaU';
+      const API_KEY ='your api key';
      
 
       
